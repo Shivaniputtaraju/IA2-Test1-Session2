@@ -11,3 +11,4 @@ n
 (gdb) n
 the areaof the triangle with the base -0.000000 and height -58732487575652188291072.000000 is -0.000000
 22    return 0;
+
