@@ -1,0 +1,13 @@
+Breakpoint 1, main () at p1final.c:16
+16  {
+(gdb) s
+18    input(&base,&height);
+(gdb) n
+enter the base and height of the triangle
+n
+20    find_area(base,height,&area);
+(gdb) n
+21    output(base,height,area);
+(gdb) n
+the area of the triangle with base 0.000000 and haight -246957418841651544064.000000 is -0.000000
+22    return 0;
