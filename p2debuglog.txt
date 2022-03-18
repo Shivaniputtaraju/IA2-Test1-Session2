@@ -1,0 +1,29 @@
+Breakpoint 1, main () at p2final.c:30
+30    int AB = input_side();
+(gdb) s
+input_side () at p2final.c:3
+3   {
+(gdb) n
+5     printf("enter a side of the triangle\n");
+(gdb) n
+enter a side of the triangle
+6     scanf("%d",&side);
+(gdb) n
+n
+7     return side;
+(gdb) n
+8   }
+(gdb) n
+main () at p2final.c:31
+31    int BC = input_side();
+(gdb) n
+enter a side of the triangle
+32    int CA = input_side();
+(gdb) n
+enter a side of the triangle
+33    int res = check_scalene(AB, BC, CA);
+(gdb) n
+34    output(AB, BC, CA, res);
+(gdb) n
+the triangle with sides 32762, 32762 and 32762 is not scalene
+35    return 0;
