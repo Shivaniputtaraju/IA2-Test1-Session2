@@ -1,0 +1,14 @@
+
+Breakpoint 1, main () at p7final.c:23
+23  {
+(gdb) s
+25    t=input_triangle();
+(gdb) n
+enter the base length,altitude length
+n
+26    find_area(&t);
+(gdb) n
+27    output(t);
+(gdb) n
+the area of the triangle with base:0.000000 and altitude:0.000000 is 0.000000
+28    return 0;
