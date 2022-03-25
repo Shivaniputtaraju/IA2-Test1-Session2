@@ -1,17 +1,29 @@
 #include<stdio.h>
-
-void display_string(char *s)
+struct _triangle
 {
-    for(int i=0;s[i] != '\0';i++)
-    {
-        printf("%c ",s[i]);
-    }
-    printf("\n");
+float base,altitude,area;
+};
+typedef struct _triangle triangle;
+triangle input_triangle()
+{
+  triangle t;
+  printf("enter the base length,altitude length\n");
+  scanf("%f %f",&t.base,&t.altitude);
+  return t;
 }
-
-
+void find_area(triangle *t)
+{
+  t->area=0.5 * (t->base * t->altitude);
+}
+void output(triangle t)
+{
+  printf("the area of the triangle with base:%f and altitude:%f is %f\n",t.base,t.altitude,t.area);
+}
 int main()
 {
-  char s[100]="pooja";
-  display_string(s);
+  triangle t;
+  t=input_triangle();
+  find_area(&t);
+  output(t);
+  return 0;
 }
